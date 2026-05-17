@@ -31,11 +31,11 @@ module.exports = function (grunt) {
         // entry, umdName, skipMoment
 
         var rollupOpts = {
-                input: opts.entry,
-                plugins: [
-                    // babel({})
-                ],
-            },
+            input: opts.entry,
+            plugins: [
+                // babel({})
+            ],
+        },
             bundleOpts = {
                 format: opts.format != null ? opts.format : 'umd',
                 name: opts.umdName != null ? opts.umdName : 'not_used',
@@ -67,9 +67,9 @@ module.exports = function (grunt) {
     function transpile(opts) {
         // base, entry, skipMoment, headerFile, skipLines, target
         var umdName =
-                opts.headerFile != null && opts.headerFile !== 'none'
-                    ? 'not_used'
-                    : opts.umdName,
+            opts.headerFile != null && opts.headerFile !== 'none'
+                ? 'not_used'
+                : opts.umdName,
             headerFile = opts.headerFile
                 ? opts.headerFile
                 : 'templates/default.js',
@@ -239,6 +239,20 @@ module.exports = function (grunt) {
             })
             .then(function () {
                 return transpileMany({
+                    base: '.',
+                    pattern: 'da_training_project_tests/*.js',
+                    headerFile: 'templates/test-header.js',
+                    skipLines: 7,
+                    moveComments: true,
+                    targetDir: 'build/umd/test',
+                    skipMoment: true,
+                });
+            })
+            .then(function () {
+                grunt.log.ok('build/umd/test/da_training_project_tests/*.js');
+            })
+            .then(function () {
+                return transpileMany({
                     base: 'src',
                     pattern: 'test/locale/*.js',
                     headerFile: 'templates/test-header.js',
@@ -328,7 +342,7 @@ module.exports = function (grunt) {
                     ) {
                         throw new Error(
                             'You probably specified locales requiring ' +
-                                "parent locale, but didn't specify parent"
+                            "parent locale, but didn't specify parent"
                         );
                     }
                 })
