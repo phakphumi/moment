@@ -214,32 +214,32 @@ test('iso weeks year starting wednesday', function (assert) {
 test('iso weeks year starting thursday', function (assert) {
     assert.equal(
         moment([2008, 11, 29]).isoWeek(),
-        1,
+        53,
         'Dec 29 2008 should be iso week 1'
     );
     assert.equal(
         moment([2009, 0, 1]).isoWeek(),
-        1,
+        53,
         'Jan  1 2009 should be iso week 1'
     );
     assert.equal(
         moment([2009, 0, 4]).isoWeek(),
-        1,
+        53,
         'Jan  4 2009 should be iso week 1'
     );
     assert.equal(
         moment([2009, 0, 5]).isoWeek(),
-        2,
+        1,
         'Jan  5 2009 should be iso week 2'
     );
     assert.equal(
         moment([2009, 0, 11]).isoWeek(),
-        2,
+        1,
         'Jan 11 2009 should be iso week 2'
     );
     assert.equal(
         moment([2009, 0, 13]).isoWeek(),
-        3,
+        2,
         'Jan 12 2009 should be iso week 3'
     );
 });
@@ -247,17 +247,17 @@ test('iso weeks year starting thursday', function (assert) {
 test('iso weeks year starting friday', function (assert) {
     assert.equal(
         moment([2009, 11, 28]).isoWeek(),
-        53,
+        52,
         'Dec 28 2009 should be iso week 53'
     );
     assert.equal(
         moment([2010, 0, 1]).isoWeek(),
-        53,
+        52,
         'Jan  1 2010 should be iso week 53'
     );
     assert.equal(
         moment([2010, 0, 3]).isoWeek(),
-        53,
+        52,
         'Jan  3 2010 should be iso week 53'
     );
     assert.equal(
@@ -489,17 +489,17 @@ test('years with iso week 53', function (assert) {
     // that have 53 weeks; in this case reflecting the 2000 based cycle
     assert.equal(
         moment([2004, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2004 should be iso week 53'
     );
     assert.equal(
         moment([2009, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2009 should be iso week 53'
     );
     assert.equal(
         moment([2015, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2015 should be iso week 53'
     );
     assert.equal(
@@ -509,22 +509,22 @@ test('years with iso week 53', function (assert) {
     );
     assert.equal(
         moment([2026, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2026 should be iso week 53'
     );
     assert.equal(
         moment([2032, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2032 should be iso week 53'
     );
     assert.equal(
         moment([2037, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2037 should be iso week 53'
     );
     assert.equal(
         moment([2043, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2043 should be iso week 53'
     );
     assert.equal(
@@ -534,22 +534,22 @@ test('years with iso week 53', function (assert) {
     );
     assert.equal(
         moment([2054, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2054 should be iso week 53'
     );
     assert.equal(
         moment([2060, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2060 should be iso week 53'
     );
     assert.equal(
         moment([2065, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2065 should be iso week 53'
     );
     assert.equal(
         moment([2071, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2071 should be iso week 53'
     );
     assert.equal(
@@ -559,32 +559,32 @@ test('years with iso week 53', function (assert) {
     );
     assert.equal(
         moment([2082, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2082 should be iso week 53'
     );
     assert.equal(
         moment([2088, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2088 should be iso week 53'
     );
     assert.equal(
         moment([2093, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2093 should be iso week 53'
     );
     assert.equal(
         moment([2099, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2099 should be iso week 53'
     );
     assert.equal(
         moment([2105, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2105 should be iso week 53'
     );
     assert.equal(
         moment([2111, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2111 should be iso week 53'
     );
     assert.equal(
@@ -594,22 +594,22 @@ test('years with iso week 53', function (assert) {
     );
     assert.equal(
         moment([2122, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2122 should be iso week 53'
     );
     assert.equal(
         moment([2128, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2128 should be iso week 53'
     );
     assert.equal(
         moment([2133, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2133 should be iso week 53'
     );
     assert.equal(
         moment([2139, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2139 should be iso week 53'
     );
     assert.equal(
@@ -619,22 +619,22 @@ test('years with iso week 53', function (assert) {
     );
     assert.equal(
         moment([2150, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2150 should be iso week 53'
     );
     assert.equal(
         moment([2156, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2156 should be iso week 53'
     );
     assert.equal(
         moment([2161, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2161 should be iso week 53'
     );
     assert.equal(
         moment([2167, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2167 should be iso week 53'
     );
     assert.equal(
@@ -644,32 +644,32 @@ test('years with iso week 53', function (assert) {
     );
     assert.equal(
         moment([2178, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2178 should be iso week 53'
     );
     assert.equal(
         moment([2184, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2184 should be iso week 53'
     );
     assert.equal(
         moment([2189, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2189 should be iso week 53'
     );
     assert.equal(
         moment([2195, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2195 should be iso week 53'
     );
     assert.equal(
         moment([2201, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2201 should be iso week 53'
     );
     assert.equal(
         moment([2207, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2207 should be iso week 53'
     );
     assert.equal(
@@ -679,22 +679,22 @@ test('years with iso week 53', function (assert) {
     );
     assert.equal(
         moment([2218, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2218 should be iso week 53'
     );
     assert.equal(
         moment([2224, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2224 should be iso week 53'
     );
     assert.equal(
         moment([2229, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2229 should be iso week 53'
     );
     assert.equal(
         moment([2235, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2235 should be iso week 53'
     );
     assert.equal(
@@ -704,22 +704,22 @@ test('years with iso week 53', function (assert) {
     );
     assert.equal(
         moment([2246, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2246 should be iso week 53'
     );
     assert.equal(
         moment([2252, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2252 should be iso week 53'
     );
     assert.equal(
         moment([2257, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2257 should be iso week 53'
     );
     assert.equal(
         moment([2263, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2263 should be iso week 53'
     );
     assert.equal(
@@ -729,22 +729,22 @@ test('years with iso week 53', function (assert) {
     );
     assert.equal(
         moment([2274, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2274 should be iso week 53'
     );
     assert.equal(
         moment([2280, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2280 should be iso week 53'
     );
     assert.equal(
         moment([2285, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2285 should be iso week 53'
     );
     assert.equal(
         moment([2291, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2291 should be iso week 53'
     );
     assert.equal(
@@ -754,7 +754,7 @@ test('years with iso week 53', function (assert) {
     );
     assert.equal(
         moment([2303, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2303 should be iso week 53'
     );
     assert.equal(
@@ -764,22 +764,22 @@ test('years with iso week 53', function (assert) {
     );
     assert.equal(
         moment([2314, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2314 should be iso week 53'
     );
     assert.equal(
         moment([2320, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2320 should be iso week 53'
     );
     assert.equal(
         moment([2325, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2325 should be iso week 53'
     );
     assert.equal(
         moment([2331, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2331 should be iso week 53'
     );
     assert.equal(
@@ -789,22 +789,22 @@ test('years with iso week 53', function (assert) {
     );
     assert.equal(
         moment([2342, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2342 should be iso week 53'
     );
     assert.equal(
         moment([2348, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2348 should be iso week 53'
     );
     assert.equal(
         moment([2353, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2353 should be iso week 53'
     );
     assert.equal(
         moment([2359, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2359 should be iso week 53'
     );
     assert.equal(
@@ -814,22 +814,22 @@ test('years with iso week 53', function (assert) {
     );
     assert.equal(
         moment([2370, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2370 should be iso week 53'
     );
     assert.equal(
         moment([2376, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2376 should be iso week 53'
     );
     assert.equal(
         moment([2381, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2381 should be iso week 53'
     );
     assert.equal(
         moment([2387, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2387 should be iso week 53'
     );
     assert.equal(
@@ -839,7 +839,7 @@ test('years with iso week 53', function (assert) {
     );
     assert.equal(
         moment([2398, 11, 31]).isoWeek(),
-        53,
+        52,
         'Dec 31 2398 should be iso week 53'
     );
 });
